@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const handleBurgerMenu = () => {
+		setIsOpen(!isOpen);
+	};
+
 	return (
 		<nav
 			className='navbar navbar-expand-lg navbar-dark bg-primary fixed-top'
@@ -24,11 +30,16 @@ const Navbar = () => {
 				aria-controls='navbarSupportedContent'
 				aria-expanded='false'
 				aria-label='Toggle navigation'
+				onClick={handleBurgerMenu}
 			>
 				<span className='navbar-toggler-icon'></span>
 			</button>
 			<div
-				className='collapse navbar-collapse'
+				className={
+					!isOpen
+						? 'collapse navbar-collapse'
+						: 'collapse navbar-collapse show'
+				}
 				id='navbarSupportedContent'
 			>
 				<ul className='navbar-nav'>
@@ -36,6 +47,7 @@ const Navbar = () => {
 						<a
 							className='nav-link js-scroll-trigger'
 							href='#profile'
+							onClick={handleBurgerMenu}
 						>
 							Profile
 						</a>
@@ -44,6 +56,7 @@ const Navbar = () => {
 						<a
 							className='nav-link js-scroll-trigger'
 							href='#experience'
+							onClick={handleBurgerMenu}
 						>
 							Experience
 						</a>
@@ -52,6 +65,7 @@ const Navbar = () => {
 						<a
 							className='nav-link js-scroll-trigger'
 							href='#education'
+							onClick={handleBurgerMenu}
 						>
 							Education
 						</a>
@@ -60,6 +74,7 @@ const Navbar = () => {
 						<a
 							className='nav-link js-scroll-trigger'
 							href='#skills'
+							onClick={handleBurgerMenu}
 						>
 							Skills
 						</a>
@@ -68,6 +83,7 @@ const Navbar = () => {
 						<a
 							className='nav-link js-scroll-trigger'
 							href='#interests'
+							onClick={handleBurgerMenu}
 						>
 							Interests
 						</a>
@@ -76,6 +92,7 @@ const Navbar = () => {
 						<a
 							className='nav-link js-scroll-trigger'
 							href='#awards'
+							onClick={handleBurgerMenu}
 						>
 							Awards
 						</a>

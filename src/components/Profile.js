@@ -9,7 +9,7 @@ const Profile = () => {
 					<span className='text-primary'>Laidlaw</span>
 				</h1>
 				<div className='subheading mb-5'>
-					+44 7968903859 ·
+					+44 7968903859 &nbsp;
 					<a href='mailto:name@email.com'>
 						duncan.laidlaw@btinternet.com
 					</a>
