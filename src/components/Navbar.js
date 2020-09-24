@@ -33,8 +33,11 @@ const Navbar = () => {
 			>
 				<ul className='navbar-nav'>
 					<li className='nav-item'>
-						<a className='nav-link js-scroll-trigger' href='#about'>
-							About
+						<a
+							className='nav-link js-scroll-trigger'
+							href='#profile'
+						>
+							Profile
 						</a>
 					</li>
 					<li className='nav-item'>

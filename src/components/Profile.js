@@ -1,15 +1,15 @@
 import React from 'react';
 
-const About = () => {
+const Profile = () => {
 	return (
-		<section className='resume-section' id='about'>
+		<section className='resume-section' id='profile'>
 			<div className='resume-section-content'>
-				<h1 className='mb-0'>
+				<h1 className='mb-0 profile-name'>
 					Duncan
 					<span className='text-primary'>Laidlaw</span>
 				</h1>
 				<div className='subheading mb-5'>
-					+44 7968903859&nbsp;·&nbsp;
+					+44 7968903859 ·
 					<a href='mailto:name@email.com'>
 						duncan.laidlaw@btinternet.com
 					</a>
@@ -39,4 +39,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default Profile;

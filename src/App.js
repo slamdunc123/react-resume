@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import About from './components/About';
+import Profile from './components/Profile';
 import Skills from './components/Skills';
 import Education from './components/Education';
 import Experience from './components/Experience';
@@ -14,7 +14,7 @@ function App() {
 			<Navbar />
 
 			<div className='container-fluid p-0'>
-				<About />
+				<Profile />
 				<hr className='m-0' />
 				<Experience />
 				<hr className='m-0' />
