@@ -38,6 +38,14 @@ export const experience = [
 				company: 'Twinkl',
 				duties:
 					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur.',
+				work: [
+					{
+						name: 'School Manager',
+					},
+					{
+						name: 'Create',
+					},
+				],
 				dates: 'Mar 2020 - present',
 			},
 			{
@@ -46,6 +54,14 @@ export const experience = [
 				company: 'Deeper Than Blue',
 				duties:
 					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur.',
+				work: [
+					{
+						name: 'Greendale Furniture',
+					},
+					{
+						name: 'Car & Van Mats',
+					},
+				],
 				dates: 'Feb 2019 - Mar 2020',
 			},
 			{

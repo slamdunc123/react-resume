@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { AppContext } from '../App';
+import Carousel from './Carousel';
 
 const Experience = () => {
 	const { experience } = useContext(AppContext);
@@ -15,19 +16,26 @@ const Experience = () => {
 
 	const renderExp = (exp) => {
 		return exp.map((item) => (
-			<div
-				className='d-flex flex-column flex-md-row justify-content-between mb-5'
-				key={item.id}
-			>
-				<div className='flex-grow-1'>
-					<h3 className='mb-0'>{item.title}</h3>
-					<div className='subheading mb-3'>{item.company}</div>
-					<p>{item.duties}</p>
+			<>
+				<div
+					className='d-flex flex-column flex-md-row justify-content-between mb-5'
+					key={item.id}
+				>
+					<div className='flex-grow-1'>
+						<h3 className='mb-0'>{item.title}</h3>
+						<div className='subheading mb-3'>{item.company}</div>
+						<p>{item.duties}</p>
+					</div>
+					<div className='flex-shrink-0'>
+						<span className='text-primary'>{item.dates}</span>
+					</div>
 				</div>
-				<div className='flex-shrink-0'>
-					<span className='text-primary'>{item.dates}</span>
-				</div>
-			</div>
+				{item.work
+					? item.work.map((work) => (
+							<Carousel sliderTitle={work.name} />
+					  ))
+					: null}
+			</>
 		));
 	};
 

@@ -7,6 +7,8 @@ import Experience from './components/Experience';
 import Interests from './components/Interests';
 import Awards from './components/Awards';
 import Navbar from './components/Navbar';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { profile, experience } from './constants/data';
 
 export const AppContext = createContext();
