@@ -38,12 +38,21 @@ export const experience = [
 				company: 'Twinkl',
 				duties:
 					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur.',
-				work: [
+				projects: [
 					{
 						name: 'School Manager',
+						description:
+							'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod reiciendis accusantium, quam quis minus atque, facilis laboriosam inventore veniam quas, a quasi. Cupiditate fugit beatae accusantium tenetur quos asperiores velit?',
 					},
 					{
 						name: 'Create',
+						description:
+							'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit ut commodi, ad ab laborum at sapiente vitae repellendus magni quas, sed in error dolor consectetur nisi cupiditate quod ratione?',
+					},
+					{
+						name: 'MTC',
+						description:
+							'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam rerum voluptate at iusto, nisi eius sed tenetur! Deserunt, id explicabo exercitationem possimus iure, nam nesciunt obcaecati minus ipsam tempore sit!',
 					},
 				],
 				dates: 'Mar 2020 - present',
@@ -54,12 +63,16 @@ export const experience = [
 				company: 'Deeper Than Blue',
 				duties:
 					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur.',
-				work: [
+				projects: [
 					{
 						name: 'Greendale Furniture',
+						description:
+							'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur consequatur natus aliquam dolorum, enim nobis mollitia laboriosam nihil assumenda illum voluptatem nemo sunt eius animi repellat autem praesentium tempore.',
 					},
 					{
 						name: 'Car & Van Mats',
+						description:
+							'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fugiat possimus fugit eum incidunt at, deserunt excepturi mollitia minima reprehenderit itaque sint, nemo dolor placeat quas et ex rem impedit.',
 					},
 				],
 				dates: 'Feb 2019 - Mar 2020',
@@ -83,7 +96,7 @@ export const experience = [
 		],
 	},
 	{
-		projects: [
+		projectManagement: [
 			{
 				id: 1,
 				title: 'Project Manager',

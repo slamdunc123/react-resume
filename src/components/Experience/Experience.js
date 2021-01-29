@@ -1,11 +1,12 @@
 import React, { useState, useContext } from 'react';
-import { AppContext } from '../App';
-import Carousel from './Carousel';
+import { AppContext } from '../../App';
+import Carousel from '../Carousel';
+import './styles.css';
 
 const Experience = () => {
 	const { experience } = useContext(AppContext);
 	const { development } = experience[0];
-	const { projects } = experience[1];
+	const { projectManagement } = experience[1];
 	const { infrastructure } = experience[2];
 
 	const [prevExp, setPrevExperience] = useState(false);
@@ -30,9 +31,34 @@ const Experience = () => {
 						<span className='text-primary'>{item.dates}</span>
 					</div>
 				</div>
-				{item.work
-					? item.work.map((work) => (
-							<Carousel sliderTitle={work.name} />
+
+				{item.projects
+					? item.projects.map((project, index) => (
+							<div className='row m-2'>
+								{index % 2 === 0 ? (
+									<>
+										<div className='experience-carousel col-sm-12 col-md-6'>
+											<Carousel
+												sliderTitle={project.name}
+											/>
+										</div>
+										<div className='experience-text col-sm-12 col-md-6 bg-primary'>
+											{project.description}
+										</div>
+									</>
+								) : (
+									<>
+										<div className='experience-text col-sm-12 col-md-6 bg-secondary'>
+											{project.description}
+										</div>
+										<div className='experience-carousel col-sm-12 col-md-6'>
+											<Carousel
+												sliderTitle={project.name}
+											/>
+										</div>
+									</>
+								)}
+							</div>
 					  ))
 					: null}
 			</>
@@ -49,7 +75,7 @@ const Experience = () => {
 						? '...show previous IT experience'
 						: '...hide previous IT experience'}
 				</button>
-				{prevExp ? renderExp(projects) : null}
+				{prevExp ? renderExp(projectManagement) : null}
 				{prevExp ? renderExp(infrastructure) : null}
 			</div>
 		</section>

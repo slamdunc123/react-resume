@@ -1,12 +1,12 @@
 import React, { createContext } from 'react';
 import './App.css';
 import Profile from './components/Profile';
-import Skills from './components/Skills';
-import Education from './components/Education';
-import Experience from './components/Experience';
+import Skills from './components/Skills/Skills';
+import Education from './components/Education/Education';
+import Experience from './components/Experience/Experience';
 import Interests from './components/Interests';
-import Awards from './components/Awards';
-import Navbar from './components/Navbar';
+import Awards from './components/Awards/Awards';
+import Navbar from './components/Navbar/Navbar';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { profile, experience } from './constants/data';

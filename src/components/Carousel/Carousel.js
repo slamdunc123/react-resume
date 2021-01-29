@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import './styles.css';
 
 const Carousel = ({ sliderTitle }) => {
 	const settings = {
@@ -8,30 +9,21 @@ const Carousel = ({ sliderTitle }) => {
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// arrows: true,
+		arrows: false,
 	};
 	return (
 		<div style={{ marginBottom: 50 }}>
 			<h5>{sliderTitle}</h5>
 			<Slider {...settings}>
-				<div>
-					<h3>1</h3>
+				<div className='slider-slide'>
+					{/* <img
+						className='slick-slide-image'
+						src={`https://picsum.photos/400/200?img=1`}
+					/> */}
+					{/* <label className='slick-slide-label'>label</label> */}
 				</div>
-				<div>
-					<h3>2</h3>
-				</div>
-				<div>
-					<h3>3</h3>
-				</div>
-				<div>
-					<h3>4</h3>
-				</div>
-				<div>
-					<h3>5</h3>
-				</div>
-				<div>
-					<h3>6</h3>
-				</div>
+				<div className='slider-slide'></div>
+				<div className='slider-slide'></div>
 			</Slider>
 		</div>
 	);
